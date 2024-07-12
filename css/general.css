@@ -1,5 +1,4 @@
 /*
-
 --- 01 TYPOGRAPHY SYSTEM
 
 - FONT SIZE SYSTEM (px)
@@ -17,6 +16,7 @@ Default: 1
 Small: 1.05
 Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
 
 -- Letter spacing 
 - 0.5px
@@ -231,6 +231,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-item {
