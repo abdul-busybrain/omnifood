@@ -10,8 +10,6 @@ btnNavEl.addEventListener("click", function () {
 
 // smooth scrolling animation
 const allLinkEl = document.querySelectorAll("a:link");
-console.log(allLinkEl);
-
 allLinkEl.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -40,7 +38,6 @@ allLinkEl.forEach(function (link) {
 //////////////////////////////
 // sticky navigation
 const sectionHeroEl = document.querySelector(".section-hero");
-
 const obeserver = new IntersectionObserver(
   function (entries) {
     const entry = entries[0];
@@ -72,7 +69,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   let isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) {
     document.body.classList.add("no-flexbox-gap");
